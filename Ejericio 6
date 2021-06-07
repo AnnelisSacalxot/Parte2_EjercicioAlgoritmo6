@@ -1,0 +1,23 @@
+6. A un grupo de 100 personas se les consulta la edad. Se desea saber el promedio de edad que tienen las personas con menos de 25 años, y el promedio de edad de las personas mayores o iguales a 25 años.
+
+Algoritmo Promedio_Edad
+	Definir menores, mayores, i Como Entero
+	menores <- 0
+	mayores <- 0
+	Escribir "La cantidad total de personas:"
+	Leer N
+	Mientras i < N Hacer
+		Escribir "Ingrese las edades correspondientes:"
+		Leer edad
+		Si edad < 25 Entonces
+			promedioMenor <- menores/N
+		SiNo
+			Si edad >= 25 Entonces
+				promedioMayor <- mayores/ N
+			FinSi
+			i <- i + 1
+		FinSi
+	FinMientras
+	Escribir "El promedio es:", promedioMenor
+	Escribir "El promedio es:", promedioMayor 
+FinAlgoritmo
